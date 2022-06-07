@@ -1,7 +1,7 @@
 ﻿
 namespace Testuje
 {
-    partial class Form1
+    partial class Aplikacja
     {
         /// <summary>
         /// Required designer variable.
@@ -31,6 +31,7 @@ namespace Testuje
         {
             this.components = new System.ComponentModel.Container();
             DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement3;
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Aplikacja));
             this.data_do = new DevExpress.XtraEditors.DateEdit();
             this.accordionControl1 = new DevExpress.XtraBars.Navigation.AccordionControl();
             this.Lokal = new DevExpress.XtraEditors.ComboBoxEdit();
@@ -94,6 +95,7 @@ namespace Testuje
             this.accordionControlSeparator2});
             this.accordionControl1.Location = new System.Drawing.Point(0, 0);
             this.accordionControl1.Name = "accordionControl1";
+            this.accordionControl1.ScrollBarMode = DevExpress.XtraBars.Navigation.ScrollBarMode.Auto;
             this.accordionControl1.Size = new System.Drawing.Size(184, 342);
             this.accordionControl1.TabIndex = 0;
             // 
@@ -169,6 +171,8 @@ namespace Testuje
             this.gridView1.OptionsPrint.PrintFilterInfo = true;
             this.gridView1.OptionsPrint.PrintFooter = false;
             this.gridView1.OptionsPrint.PrintGroupFooter = false;
+            this.gridView1.OptionsPrint.PrintHeader = false;
+            this.gridView1.OptionsView.ShowGroupPanel = false;
             // 
             // Nazwa
             // 
@@ -177,6 +181,7 @@ namespace Testuje
             this.Nazwa.MinWidth = 25;
             this.Nazwa.Name = "Nazwa";
             this.Nazwa.OptionsColumn.AllowEdit = false;
+            this.Nazwa.OptionsColumn.AllowFocus = false;
             this.Nazwa.Visible = true;
             this.Nazwa.VisibleIndex = 0;
             this.Nazwa.Width = 94;
@@ -188,6 +193,7 @@ namespace Testuje
             this.Data.MinWidth = 25;
             this.Data.Name = "Data";
             this.Data.OptionsColumn.AllowEdit = false;
+            this.Data.OptionsColumn.AllowFocus = false;
             this.Data.Visible = true;
             this.Data.VisibleIndex = 1;
             this.Data.Width = 94;
@@ -201,6 +207,7 @@ namespace Testuje
             this.Godzina.MinWidth = 25;
             this.Godzina.Name = "Godzina";
             this.Godzina.OptionsColumn.AllowEdit = false;
+            this.Godzina.OptionsColumn.AllowFocus = false;
             this.Godzina.Visible = true;
             this.Godzina.VisibleIndex = 2;
             this.Godzina.Width = 94;
@@ -212,6 +219,7 @@ namespace Testuje
             this.coluzytkownik.MinWidth = 25;
             this.coluzytkownik.Name = "coluzytkownik";
             this.coluzytkownik.OptionsColumn.AllowEdit = false;
+            this.coluzytkownik.OptionsColumn.AllowFocus = false;
             this.coluzytkownik.Visible = true;
             this.coluzytkownik.VisibleIndex = 3;
             this.coluzytkownik.Width = 94;
@@ -223,6 +231,7 @@ namespace Testuje
             this.collokal.MinWidth = 25;
             this.collokal.Name = "collokal";
             this.collokal.OptionsColumn.AllowEdit = false;
+            this.collokal.OptionsColumn.AllowFocus = false;
             this.collokal.Visible = true;
             this.collokal.VisibleIndex = 4;
             this.collokal.Width = 94;
@@ -237,9 +246,9 @@ namespace Testuje
             this.button_update.TabIndex = 2;
             this.button_update.Text = "Zatwierdz";
             this.button_update.UseVisualStyleBackColor = true;
-            this.button_update.Click += new System.EventHandler(this.button_update_event);
+            this.button_update.Click += new System.EventHandler(this.Button_update_event);
             // 
-            // Form1
+            // Aplikacja
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -247,9 +256,10 @@ namespace Testuje
             this.Controls.Add(this.button_update);
             this.Controls.Add(this.gridControl1);
             this.Controls.Add(this.accordionControl1);
+            this.IconOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("Aplikacja.IconOptions.SvgImage")));
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "Aplikacja";
+            this.Text = "Aplikacja";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.data_do.Properties.CalendarTimeProperties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.data_do.Properties)).EndInit();

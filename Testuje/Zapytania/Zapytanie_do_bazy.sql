@@ -1,4 +1,4 @@
-﻿
+﻿/* Kod wrzycony wyłacznie do celów informacyjnych */
 use [C:\USERS\GARTENLAND13\SOURCE\REPOS\TESTUJE\TESTUJE\DATABASE_TRIAL.MDF]
 go
 
