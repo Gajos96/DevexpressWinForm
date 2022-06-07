@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="Database_Trial" Class="DataClasses1DataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Database_Trial.mdf;Integrated Security=True" SettingsObjectName="Testuje.Properties.Settings" SettingsPropertyName="Database_TrialConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Trial_Table" Member="Trial_Table">
+    <Type Name="Trial_Table">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="nazwa_eksportu" Type="System.String" DbType="NVarChar(25) NOT NULL" CanBeNull="false" />
+      <Column Name="data_wprowadzenia" Type="System.DateTime" DbType="DateTime2 NOT NULL" CanBeNull="false" />
+      <Column Name="uzytkownik" Type="System.String" DbType="NVarChar(25) NOT NULL" CanBeNull="false" />
+      <Column Name="lokal" Type="System.String" DbType="NVarChar(25) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+</Database>
