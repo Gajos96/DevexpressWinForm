@@ -46,7 +46,8 @@ namespace Testuje
         }
 
 
-
+        // Dość Łatwe zdanie wiec nie tworzyłem go w zadnym modelu .
+        //Zapytanie jest umieszczone jest tylko w celach inromacyjnych . 
         
     }
 }
