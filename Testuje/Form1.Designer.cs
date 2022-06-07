@@ -101,7 +101,7 @@ namespace Testuje
             // 
             // Lokal
             // 
-            this.Lokal.EditValue = "Kolekcje:";
+            this.Lokal.EditValue = "Lokal:";
             this.Lokal.Location = new System.Drawing.Point(25, 20);
             this.Lokal.Name = "Lokal";
             this.Lokal.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {

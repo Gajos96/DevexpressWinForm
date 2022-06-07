@@ -42,11 +42,12 @@ namespace Testuje
         private void Button_update_event(object sender, EventArgs e)
         {
             gridControl1.DataSource = dataContext.Trial_Table.Where(o => Data_Od < o.data_wprowadzenia && Data_Do > o.data_wprowadzenia).Where(o =>
-               Lokal.Text != "Kolekcje:" ? o.lokal == Premises : o.lokal != null);
+               Lokal.Text != "Lokal:" ? o.lokal == Premises : o.lokal != null);
         }
 
 
-
+        // Dość Łatwe zdanie wiec nie tworzyłem go w zadnym modelu .
+        //Zapytanie jest umieszczone jest tylko w celach inromacyjnych . 
         
     }
 }
