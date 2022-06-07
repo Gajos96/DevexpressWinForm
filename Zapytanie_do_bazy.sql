@@ -21,6 +21,6 @@ Declare @Lokal as nvarchar= 'Krowa'
 WHILE @intCounter <= 5
 BEGIN
 INSERT INTO Trial_Table (nazwa_eksportu ,uzytkownik ,lokal)
-Values ('nazwa' + CONVERT( nvarchar,@intCounter), @Lokal + CONVERT( nvarchar, @intCounter) , 'Lokal1')
+Values ('nazwa' + CONVERT( nvarchar,@intCounter), @Lokal + CONVERT( nvarchar, @intCounter) , 'Lokal ' + CONVERT( nvarchar, @intCounter))
 Set @intCounter = @intCounter +1
 END;
